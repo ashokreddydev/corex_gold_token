@@ -1,0 +1,39 @@
+{
+  "name": "gold-backed-token",
+  "version": "1.0.0",
+  "description": "Production-ready ERC-20 Gold Backed Token (GBT) smart contract",
+  "main": "index.js",
+  "scripts": {
+    "test": "hardhat test",
+    "test:watch": "hardhat test --watch",
+    "compile": "hardhat compile",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia",
+    "deploy:mainnet": "hardhat run scripts/deploy.js --network mainnet",
+    "node": "hardhat node",
+    "verify": "hardhat verify",
+    "clean": "hardhat clean"
+  },
+  "keywords": [
+    "ethereum",
+    "erc20",
+    "gold",
+    "token",
+    "blockchain",
+    "hardhat"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.0",
+    "@openzeppelin/contracts": "^5.0.0",
+    "chai": "^4.3.0",
+    "ethers": "^6.10.0",
+    "hardhat": "^2.19.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2"
+  }
+}
