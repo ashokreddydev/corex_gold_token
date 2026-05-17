@@ -1,9 +1,12 @@
+import dns from "node:dns/promises";
+
+dns.setServers(["1.1.1.1"]);
+
 import mongoose from 'mongoose';
 import config from './config.js';
 
 export const connectDB = async () => {
   try {
-    console.log('Connecting to MongoDB...', config.mongodb.uri);
     await mongoose.connect(config.mongodb.uri);
     console.log('MongoDB connected successfully');
   } catch (error) {
