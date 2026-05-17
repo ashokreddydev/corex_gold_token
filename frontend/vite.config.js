@@ -14,9 +14,8 @@ export default defineConfig({
     hmr: false,
     proxy: {
       '/api': {
-        target: process.env.VITE_API_BASE_URL || 'http://localhost:3000',
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, '/api'),
+        target: 'http://localhost:3000',
+         secure: false
       },
     },
   },
